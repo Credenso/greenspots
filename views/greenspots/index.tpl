@@ -96,7 +96,7 @@
 									Greenspots relies on a variety of distinct
 									standards to determine where companies are
 									meeting the mark and where they have room
-									to improve.
+									to grow.
 								</p> 
 								<ul class="actions">
 									<li><a href="standards" class="button">Learn More</a></li>
