@@ -5,7 +5,7 @@
 	License: pixelarity.com/license
 -->
 
-% setdefault('star', 'credenso.cafe')
+% setdefault('star', 'greenspots.net')
 <html>
 	<head>
 		<title>Greenspots</title>
@@ -36,7 +36,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="/greenspots/" class="logo"><strong>greenspots</strong>@{{ star }}</a>
+						<a href="/" class="logo"><strong>greenspots</strong>@{{ star }}</a>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -49,7 +49,6 @@
 							<li><a href="app">App</a></li>
 							<li><a href="badges">Badges</a></li>
 							<li><a href="features">Features</a></li>
-							<li><a href="/">Solar</a></li>
 						</ul>
 						<ul class="actions stacked">
 							% if member:
