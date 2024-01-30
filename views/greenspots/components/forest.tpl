@@ -32,7 +32,7 @@
 	ip = tree[0].split('.')
 	height = 8 * math.log(len(tree[1])/2 + 1)
 	tree_id = divmod(int(ip[3]), 22)[1]
-	x_position = divmod((int(ip[0]) + int(ip[1]) + int(ip[2])), 100)[1]
+	x_position = divmod((int(ip[0]) + int(ip[1]) + int(ip[2])), 100)[1] - 5
 	%>
 	<img 
 	    % if me:
