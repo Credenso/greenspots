@@ -42,7 +42,7 @@
 							<li><a href="index">Home</a></li>
 							<li><a href="app">App</a></li>
 							<li><a href="badges">Badges</a></li>
-							<li><a href="features">Features</a></li>
+							<!--<li><a href="features">Features</a></li>-->
 						</ul>
 						<ul class="actions stacked">
 							% if member:

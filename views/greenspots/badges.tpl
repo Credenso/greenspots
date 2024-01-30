@@ -21,11 +21,11 @@
 
 	<div class="anchor" id="recycler">
 	<h3><span class="icon solid fa-recycle" style="margin-right: 1em"></span> Recycler</h3>
-	<p><b>Recyclers</b> are sorting their stuff out, making sure that they're relying on recycling facilities to take care of their hard plastics, papers, glasses, and metal containers.</p>
+	<p><b>Recyclers</b> are sorting their stuff out, making sure that they're relying on recycling facilities to take care of their hard plastics, papers, glasses, and metal containers. Other companies with this badge might be choosing to recycle </p>
 
 	<div class="anchor" id="renewer">
 	<h3><span class="icon solid fa-leaf" style="margin-right: 1em"></span> Renewer</h3>
-	<p><b>Renewers</b> are making sure to make the conscious decision of avoiding waste by choosing only biodegradable products when there's a need to supply customers with any sort of disposable materials.</p>
+	<p><b>Renewers</b> are making sure to make the conscious decision of avoiding waste by choosing only biodegradable or reusable options when offering their products to clients.</p>
 
 	<div class="anchor" id="supporter">
 	<h3><span class="icon solid fa-dove" style="margin-right: 1em"></span> Supporter</h3>
