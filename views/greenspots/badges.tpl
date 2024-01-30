@@ -21,7 +21,7 @@
 
 	<div class="anchor" id="recycler">
 	<h3><span class="icon solid fa-recycle" style="margin-right: 1em"></span> Recycler</h3>
-	<p><b>Recyclers</b> are sorting their stuff out, making sure that they're relying on recycling facilities to take care of their hard plastics, papers, glasses, and metal containers. Other companies with this badge might be choosing to recycle </p>
+	<p><b>Recyclers</b> are sorting their stuff out, making sure that they're relying on recycling facilities to take care of their hard plastics, papers, glasses, and metal containers. Other companies with this badge might be choosing to take recycling into their own hands by upcycling used materials and making the most of what already exists. </p>
 
 	<div class="anchor" id="renewer">
 	<h3><span class="icon solid fa-leaf" style="margin-right: 1em"></span> Renewer</h3>
