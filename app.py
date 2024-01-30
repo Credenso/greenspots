@@ -13,9 +13,15 @@ image_thumb = f'{path}static/images/thumb.png'
 public = True
 
 TEMPLATE_PATH.append(f'potions/greenspots/views')
-static_path = '/greenspots/static/'
 
-active_members = members.MembersList('data/members/active')
+# This may need to be configured
+static_path = '/static/'
+
+os.makedirs('data/members', exist_ok=True)
+os.makedirs('data/spots', exist_ok=True)
+os.makedirs('data/visitors', exist_ok=True)
+
+active_members = members.MembersList('data/members')
 
 def member_from_cookie():
     nsec = request.get_cookie('nsec')
