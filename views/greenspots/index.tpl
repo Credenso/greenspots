@@ -14,22 +14,16 @@
 		<link rel="stylesheet" href="{{ static_path }}assets/css/main.css" />
 		<link rel="icon" href="{{ static_path }}spot.svg" />
 		<style>
-			#sun {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 4em;
-				cursor: pointer;
-				display: none;
-			}
-
 			.links {
 				font-size: 1.4em;
+			}
+
+			.features a {
+				border-bottom: none;
 			}
 		</style>
 	</head>
 	<body class="is-preload">
-		<img id="sun" onclick="window.location = '/'" src="/static/images/solar_icon.png" alt="solar" />
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -91,22 +85,22 @@
 
 							<!-- Note: If you have an odd number of icons, change the class below to "features odd" -->
 							<ul class="features">
-								<li>
+								<li><a href="badges#composter">
 									<span class="icon major solid fa-seedling"></span>
 									<h3>Composter</h3>
-								</li>
-								<li>
+								</a></li>
+								<li><a href="badges#recycler">
 									<span class="icon major solid fa-recycle"></span>
 									<h3>Recycler</h3>
-								</li>
-								<li>
-									<span class="icon major solid fa-dove"></span>
-									<h3>Supporter</h3>
-								</li>
-								<li>
+								</a></li>
+								<li><a href="badges#renewer">
 									<span class="icon major solid fa-leaf"></span>
 									<h3>Renewer</h3>
-								</li>
+								</a></li>
+								<li><a href="badges#supporter">
+									<span class="icon major solid fa-dove"></span>
+									<h3>Supporter</h3>
+								</a></li>
 							</ul>
 						</section>
 
@@ -131,7 +125,7 @@
 						</section>
 
 					<!-- Section -->
-						<section class="main special">
+						<!--<section class="main special">
 							<h2>Featured Companies</h2>
 							<p>Read more about what some local businesses are doing to go above and beyond our call-to-action.</p>
 							<div class="slider-wrapper">
@@ -154,32 +148,38 @@
 									</article>
 								</div>
 							</div>
-						</section>
+						</section>-->
 
 					<!-- Section -->
-						<section class="main special invert accent3">
+						<!--<section class="main special invert accent3">
 							<h2>Request a Meeting</h2>
 							<p>If you would like your business to be listed on Greenspots or request our services, feel free to sign up for a welcome package.</p>
 							<form method="post" action="#" class="combined">
 								<input type="email" name="email" value="" placeholder="Your email address" />
 								<button type="submit" class="primary">Learn More</button>
 							</form>
-						</section>
+						</section>-->
 
 					<!-- Section -->
 						<section class="main special">
 							<h2>Get in touch</h2>
 							<p>For any further inquiries, we can be reached at:</p>
 							<ul class="contact-icons">
-								<li>
+								<li><a href="mailto:greenspots@credenso.cafe">
 									<span class="icon major alt fa-envelope"></span>
-									<p><a href="mailto:greenspots@credenso.cafe">greenspots@credenso.cafe</a></p>
-								</li>
-								<li>
+									<p>greenspots@credenso.cafe</p>
+								</a></li>
+								<li><a href="https://maps.app.goo.gl/6e4mwQToaU2TqhFk7">
 									<span class="icon major alt fa-map"></span>
-									<p>68 Hillsboro Drive <br/>
-									Cambridge, ON</p>
-								</li>
+									<p>El Refugio de Sayulita</br>
+									C. Manuel M. Plascencia 18, </br>
+									La Estropajera, 63734</br>
+									Sayulita, Nay.</p>
+								</a></li>
+								<li><a href="https://wa.me/+523221188127">
+									<span class="icon major alt brands fa-whatsapp"></span>
+									<p>+52 322 118 8127</p>
+								</a></li>
 							</ul>
 						</section>
 				% end
