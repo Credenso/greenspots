@@ -1,12 +1,37 @@
 % rebase('greenspots/index.tpl')
 % setdefault('static_path', '/static/')
+% setdefault('lang', 'es')
 
 <section class="main">
 	<header class="invert accent2">
+		% if lang == 'es':
+		<h1>Insignias</h1>
+		<p>Greenspots mantiene el listón muy alto en sus metas de sostentibilidad.</p>
+		% else:
 		<h1>Badges</h1>
-		<p> Greenspots holds the bar high when it comes to reaching sustainability goals.  </p>
+		<p> Greenspots holds the bar high when it comes to reaching sustainability goals.</p>
+		% end
 	</header>
 	<span class="image main filtered"><img src="{{ static_path }}images/stairwell.jpg" alt="" /></span>
+	% if lang == 'es':
+	<p>En el mundo de la sostenibilidad y la administración, siempre se puede hacer más. Greenspots establece un sistema de "insignias" para que cada empresa pueda mostrar lo que está haciendo para apoyar la sostenibilidad a su manera.	</p>
+	<p>
+		<i>Se necesita al menos una insignia para aparecer en el mapa.</i>
+	</p>
+
+	<div class="anchor" id="reducer">
+	<h3><span class="icon solid fa-seedling" style="margin-right: 1em"></span> Reductor</h3>
+	<p>Los <b>reductores</b> están a la vanguardia de la lucha por la sostenibilidad. Al elegir vender u ofrecer materiales compostables o reutilizables, mantienen baja la demanda de materiales de desecho.</p>
+
+	<div class="anchor" id="reuser">
+	<h3><span class="icon solid fa-leaf" style="margin-right: 1em"></span> Reutilizador</h3>
+	<p>Los <b>reutilizadors</b> aprovechan al máximo lo que ya está disponible. Al ofrecer servicios que fomentan la reutilización de los recursos existentes (ropa de segunda mano, recarga de botellas de agua), estos negocios permiten a las personas aprovechar al máximo lo que ya tienen.</p>
+
+	<div class="anchor" id="recycler">
+	<h3><span class="icon solid fa-recycle" style="margin-right: 1em"></span> Reciclador</h3>
+	<p>Los <b>recicladors</b> están clasificando sus desechos, asegurándose de separar sus productos reciclables y compostables.</p>
+	% else:
+
 	<p>
 		In the world of sustainability and stewardship, there's always more that can be done. 
 		Greenspots establishes a 'badge' system so each business can show what they're doing
@@ -15,21 +40,20 @@
 	<p>
 		<i>At least one badge is needed to show up on the map.</i>
 	</p>
-	<div class="anchor" id="composter">
-	<h3><span class="icon solid fa-seedling" style="margin-right: 1em"></span> Composter</h3>
-	<p><b>Composters</b> are businesses who are doing what they can to make sure that their organic waste is being properly disposed of - either of their own accord or by participating in a local composting program.</p>
+
+	<div class="anchor" id="reducer">
+	<h3><span class="icon solid fa-seedling" style="margin-right: 1em"></span> Reducer</h3>
+	<p><b>Reducers</b> are at the forefront of the fight for sustainability. By choosing to sell or offer compostable or reusable materials, they keep the demand for wasteful materials down.</p>
+
+	<div class="anchor" id="reuser">
+	<h3><span class="icon solid fa-leaf" style="margin-right: 1em"></span> Reuser</h3>
+	<p><b>Reusers</b> make the most of what's already available. By offering services that encourage the reuse of existing resources (second-hand clothes, refilling water bottles), these businesses enable people to make the most of what they already have.</p>
 
 	<div class="anchor" id="recycler">
 	<h3><span class="icon solid fa-recycle" style="margin-right: 1em"></span> Recycler</h3>
-	<p><b>Recyclers</b> are sorting their stuff out, making sure that they're relying on recycling facilities to take care of their hard plastics, papers, glasses, and metal containers. Other companies with this badge might be choosing to take recycling into their own hands by upcycling used materials and making the most of what already exists. </p>
-
-	<div class="anchor" id="renewer">
-	<h3><span class="icon solid fa-leaf" style="margin-right: 1em"></span> Renewer</h3>
-	<p><b>Renewers</b> are making sure to make the conscious decision of avoiding waste by choosing only biodegradable or reusable options when offering their products to clients.</p>
-
-	<div class="anchor" id="supporter">
-	<h3><span class="icon solid fa-dove" style="margin-right: 1em"></span> Supporter</h3>
-	<p><b>Supporters</b> realize that sustainability is about more than waste. By pledging to pay every one of their employees a living wage, they make sure that they are empowering others to make better decisions about how they spend their money.</p>
+	<p><b>Recyclers</b> are sorting their stuff out, making sure that they're relying on the appropriate facilities and services to take care of their recyclable and compostable goods. 
+</p>
+	% end
 	<!--<h3><span class="icon solid fa-trash" style="margin-right: 1em"></span> Zero Waste</h3>
 	<p><b>Zero Waste</b> businesses are setting an example by refusing refuse. A spot with this badge is committed to diverting all waste away from the landfill and towards recycling or composting initiatives.</p>
 	<h3><span class="icon solid fa-heart" style="margin-right: 1em"></span> Living Wage</h3>

@@ -161,6 +161,8 @@ def newFileEvent(pubkey, name, file):
 def defaults():
     return {
             "member": member_from_cookie(),
+            "static_path": static_path,
+            "lang": request.get_cookie('lang') or 'en',
             "coords": [20.87, -105.44],
             "spots": get_spot_data(disabled=True),
             "trees": ip_tracker()
@@ -196,7 +198,6 @@ def login_post():
     name = request.forms.get('name')
     password = request.forms.get('password')
     result = active_members.login(name, password)
-    print('name', name)
     redir = request.forms.get('redirect')
     if result:
         key = secrets.token_hex(24)
@@ -225,6 +226,11 @@ def list_members():
             memberDictionary['admins'].append(card.metadata.get('public_key'))
 
     return json.dumps(memberDictionary)
+
+@app.get('/lang/<lang>')
+def setlang(lang):
+    response.set_cookie('lang', lang, path='/')
+    redirect(request.environ.get('HTTP_REFERER'))
 
 @app.post('/new_upload')
 def invite_post():
@@ -343,7 +349,7 @@ def index(route="index"):
     # This needs to be specified further, eventually. This is the coordinate for Sayulita, MX
     coords = [20.87, -105.44]
 
-    return template(f'greenspots/{route}.tpl', member=member, spots=json.dumps(spots), trees=trees, coords=coords, static_path=static_path)
+    return template(f'greenspots/{route}.tpl', **defaults())
 
 if __name__ == "__main__":
     app.run(host='localhost', port=1620, debug=True)

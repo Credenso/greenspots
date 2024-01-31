@@ -1,5 +1,6 @@
 % rebase('greenspots/index.tpl')
 % setdefault('coords', None)
+% setdefault('lang', 'es')
 
 <link rel="stylesheet" href="{{ static_path }}assets/leaflet/leaflet.css" />
 <style>
@@ -60,7 +61,11 @@
 
 <div class="app">
 <img class="logo" src="{{ static_path }}images/greenspots.png" />
+% if lang == "es":
+<p class="slogan">Apoya al Medioambiente</p>
+% else:
 <p class="slogan">Support Sustainability</p>
+% end
 <section id="map">
 <a class="icon solid fa-expand"  style="position: absolute; font-size: 2em; cursor: pointer; top: 0.25em; right: 0.5em; z-index: 1000" onclick="full()"></a>
 <a class="icon solid fa-location"  style="position: absolute; font-size: 2em; cursor: pointer; bottom: 0.25em; left: 0.5em; z-index: 1000" onclick="locate()"></a>
